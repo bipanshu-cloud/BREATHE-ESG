@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: breathe-esg
+    env: python
+    plan: free
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn config.wsgi --bind 0.0.0.0:$PORT --workers 1 --timeout 120"
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
+      - key: PYTHON_VERSION
+        value: "3.12.3"
+      - key: NODE_VERSION
+        value: "20.11.0"
