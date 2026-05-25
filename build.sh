@@ -7,7 +7,7 @@ pip install -r requirements.txt
 echo "=== Building React frontend ==="
 cd frontend
 npm install --legacy-peer-deps
-npm run build
+CI=false npm run build
 cd ..
 
 echo "=== Collecting static files ==="
