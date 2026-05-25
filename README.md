@@ -4,7 +4,7 @@ A Django REST + React application for ingesting, normalising, and reviewing carb
 
 ## Live Demo
 
-- **App:** [Deploy to Railway/Render — see below]
+- **App:** https://breathe-esg-3.onrender.com/
 - **Login:** `analyst` / `breathe123`
 
 ## Quick Start (Local)
